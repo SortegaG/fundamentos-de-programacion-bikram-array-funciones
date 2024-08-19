@@ -10,7 +10,6 @@ arrayBidimensional = [[0,1,2],['a', 'b', 'c']]
 function suma (a,b) {
     return a + b;
 }
-// REPASAR ESTO !!
 
 function potenciacion(a, b) {
     if (b === 0) {
@@ -22,13 +21,10 @@ function potenciacion(a, b) {
     let exponente = b;
 
     while (exponente > 0) {
-        // Si el exponente es impar, multiplica el resultado por la base
         if (exponente % 2 !== 0) {
             total *= base;
         }
-        // Eleva la base al cuadrado
         base *= base;
-        // Divide el exponente por 2
         exponente = Math.floor(exponente / 2);
     }
 
@@ -55,11 +51,8 @@ function esPrimo (num1) {
 return true;
 }
 
-
 // Arrays y funciones 
 
-
-// REPASAR ESTO !!
 
 function ordenarArray(arr) {
     return arr.sort((a, b) => a - b);
